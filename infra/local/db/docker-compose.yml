@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  # 로컬용 DB 구성
+  # - 설정 참고: https://hub.docker.com/_/mariadb
+  db:
+    image: mariadb:10.6.4
+    # application.properties에서 참조
+    environment:
+      MARIADB_DATABASE: pinstagram
+      MARIADB_ROOT_PASSWORD: "pinpassword"
+      MARIADB_USER: pinuser
+      MARIADB_PASSWORD: "pinpassword"
+    ports:
+      - "3306:3306"
