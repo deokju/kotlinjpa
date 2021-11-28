@@ -44,7 +44,7 @@ class MemberTest {
 
         for(m in members) {
             println("member = ${m.id}, ${m.username}, ${m.age}")
-            println("member = ${m.id}, ${m.username}, ${m.age}")
+            println("member.team = ${m.team}")
         }
 
 

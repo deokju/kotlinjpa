@@ -10,8 +10,8 @@ class Team(
     @Column(name = "team_id")
     var id: Long = 0L
 
-    @OneToMany(mappedBy = "team_id")
-    val members: List<Member> = listOf()
+    @OneToMany(mappedBy = "team")
+    val members: MutableSet<Member> = mutableSetOf()
 
 
 }

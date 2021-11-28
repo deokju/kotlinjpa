@@ -19,5 +19,6 @@ class Member(
 
     fun changeTeam(team: Team):Unit{
         this.team = team;
+        team.members.add(this)
     }
 }
