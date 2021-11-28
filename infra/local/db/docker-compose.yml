@@ -7,9 +7,9 @@ services:
     image: mariadb:10.6.4
     # application.properties에서 참조
     environment:
-      MARIADB_DATABASE: pinstagram
-      MARIADB_ROOT_PASSWORD: "pinpassword"
-      MARIADB_USER: pinuser
-      MARIADB_PASSWORD: "pinpassword"
+      MARIADB_DATABASE: jpadb
+      MARIADB_ROOT_PASSWORD: "1111"
+      MARIADB_USER: deokju
+      MARIADB_PASSWORD: "1111"
     ports:
       - "3306:3306"

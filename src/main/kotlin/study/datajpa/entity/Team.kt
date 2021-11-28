@@ -11,7 +11,7 @@ class Team(
     var id: Long = 0L
 
     @OneToMany(mappedBy = "team")
-    val members: MutableSet<Member> = mutableSetOf()
+    val members: MutableList<Member> = mutableListOf()
 
 
 }
